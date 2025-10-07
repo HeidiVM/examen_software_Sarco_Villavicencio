@@ -18,8 +18,8 @@ public class PaymentProcessor_SV
     public void Notification(double amount) {
 
         bool paymentSuccess = _paymentMethod.ProcessPayment_SV(amount);
-      //  string message = paymentSuccess ? $"Pago de ${amount} procesado exitosamente." : "Hubo un error al procesar el pago.";
-        _notificationChannel.SendNotification_SV($"Pago de {amount}");
+      
+        _notificationChannel.SendNotification_SV($"Pago realizado exitosamente");
     }
 
 }
