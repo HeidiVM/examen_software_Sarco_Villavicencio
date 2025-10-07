@@ -1,5 +1,5 @@
 ﻿using Patrones1P.Interface;
-
+//Aplicaicón de principio DIP
 
 //Inyección de dependencias
 namespace Patrones1P.Class;
@@ -13,6 +13,12 @@ public class PaymentProcessor_SV
     {
         _paymentMethod = paymentMethod_SV;
         _notificationChannel = notificationChannel_SV;
+    }
+
+    public void Notification(double amount, string message) {
+
+        _paymentMethod.ProcessPayment_SV(amount);
+        _notificationChannel.SendNotification_SV(message);
     }
 
 

@@ -1,5 +1,5 @@
 ﻿using Patrones1P.Interface;
-
+// Uso de principio LSP
 namespace Patrones1P.Class;
 
 public class EmailNotification_SV : INotificationChannel_SV
